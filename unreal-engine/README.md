@@ -1,29 +1,35 @@
 # Unreal Engine（C++）
 
-目标版本：**UE 5.8**；语言：**C++ 为主**（蓝图仅作关卡/调参，少用 AI 改蓝图）。  
-题材不限：优先选**质量高、维护好**的教程。
+目标版本：**UE 5.8**；语言：**C++ 为主**。  
+约束：企业 Udemy（https://tencent.udemy.com/）目录里**可能没有** Ulibarri 那门课 → 默认走 **免费官方主线**；企业库有 C++ 课时再替换/加餐。
 
-## 最短清单（就这两样）
+## 最短清单（企业 Udemy 搜不到 Ulibarri 时）
 
 | # | 资源 | 链接 | 角色 |
 |---|------|------|------|
-| 1 | Stephen Ulibarri《UE5 C++ The Ultimate Game Developer Course》 | https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/ | **主课**（约已更新到 5.7） |
-| 2a | UE 5.8 C++ 文档 | https://dev.epicgames.com/documentation/en-us/unreal-engine/programming-with-cplusplus-in-unreal-engine | **权威对照** |
-| 2b | Lyra Sample | https://dev.epicgames.com/community/learning/courses/Yj3/unreal-engine-lyra-sample-game | **官方 Sample** |
+| 1 | UE 5.8 C++ Quick Start | https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-cpp-quick-start | **入门动手** |
+| 2 | Programming with C++（5.8 文档） | https://dev.epicgames.com/documentation/en-us/unreal-engine/programming-with-cplusplus-in-unreal-engine | **主线教材** |
+| 3 | Epic Learning（筛 C++ / Programming） | https://dev.epicgames.com/community/unreal-engine/learning | **视频/专题** |
+| 4 | Lyra Sample | https://dev.epicgames.com/community/learning/courses/Yj3/unreal-engine-lyra-sample-game | **看正规项目结构** |
 
-配套代码仓：https://github.com/DruidMech/UE5_TheUltimateDeveloperCourse  
+细节：[comparison.md](./comparison.md) · [path.md](./path.md) · [resources.md](./resources.md) · [enterprise-udemy.md](./enterprise-udemy.md)
 
-细节：[comparison.md](./comparison.md) · [path.md](./path.md) · [resources.md](./resources.md)
+## 若企业库以后能开通 / 自费
+
+| 资源 | 链接 | 说明 |
+|------|------|------|
+| Ulibarri《UE5 C++ The Ultimate Game Developer Course》 | https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/ | 公开站口碑最完整的系统课；配套仓 https://github.com/DruidMech/UE5_TheUltimateDeveloperCourse |
 
 ## 进度
 
 - [ ] 安装 UE **5.8** + IDE
-- [ ] 购买/打开 [主课](https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/)
-- [ ] Clone [配套仓](https://github.com/DruidMech/UE5_TheUltimateDeveloperCourse) 对照
+- [ ] 完成 [C++ Quick Start](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-cpp-quick-start)
+- [ ] 在 [tencent.udemy.com](https://tencent.udemy.com/) 按 [enterprise-udemy.md](./enterprise-udemy.md) 搜一轮
+- [ ] 跟官方文档 + Epic Learning C++ 专题
 - [ ] 浏览 [Lyra](https://dev.epicgames.com/community/learning/courses/Yj3/unreal-engine-lyra-sample-game)
-- [ ] 主课核心段跟完后自开小项目
+- [ ] 自开小项目巩固
 
 ## 原则
 
-- 教程质量 > 是否「纯 5.8 录制」；差 API 查 5.8 文档
+- 能免费高质量就先免费；企业库有对口 C++ 课再接上
 - 逻辑写 C++；少让 AI 直接改蓝图

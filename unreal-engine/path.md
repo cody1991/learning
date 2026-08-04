@@ -1,66 +1,68 @@
-# 学习路径（含主课章节走向）
+# 学习路径（企业搜不到 Ulibarri 时）
 
 ## 直链速查
 
-- 主课：https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/
-- 代码：https://github.com/DruidMech/UE5_TheUltimateDeveloperCourse
-- 5.8 文档入口：https://dev.epicgames.com/documentation/en-us/unreal-engine/programming-with-cplusplus-in-unreal-engine
-- Lyra：https://dev.epicgames.com/community/learning/courses/Yj3/unreal-engine-lyra-sample-game
+- C++ Quick Start：https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-cpp-quick-start  
+- Programming with C++：https://dev.epicgames.com/documentation/en-us/unreal-engine/programming-with-cplusplus-in-unreal-engine  
+- Epic Learning：https://dev.epicgames.com/community/unreal-engine/learning  
+- Lyra：https://dev.epicgames.com/community/learning/courses/Yj3/unreal-engine-lyra-sample-game  
+- 企业站搜课：https://tencent.udemy.com/ （关键词见 [enterprise-udemy.md](./enterprise-udemy.md)）  
+- （可选）Ulibarri 公开课：https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/  
 
 ---
 
 ## 0. 环境
 
-1. Epic Launcher 安装 **Unreal Engine 5.8**
-2. 安装 C++ 工具链（Windows：Visual Studio，勾选游戏开发/C++）
-3. 打开主课；需要时 clone 配套仓对照（工程名多为 `Slash`）
+1. Epic Launcher 安装 **UE 5.8**  
+2. 装好 VS / Xcode（C++ 游戏开发工作负载）  
+3. 新建 **C++** 项目（Third Person 模板即可）
 
----
+## 1. 官方 Quick Start（必做）
 
-## 1. 主课怎么跟（唯一跟练课）
+按文档做完一遍：  
+https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-cpp-quick-start  
 
-按 Udemy 课纲走（Action-RPG / Open World，C++ 从零搭）。大致阶段：
+目标：会建 C++ 类、编译、回编辑器测 Actor。
 
-| 阶段 | 课里大致内容 | 你要拿到的能力 |
-|------|----------------|----------------|
-| A. 编辑器与 Open World | 关卡、Open World、书签/截图等 | 会开工程、逛世界、导入环境 |
-| B. C++ 与调试基础 | 向量、C++ 概念、Debug 函数 | 能写/读简单 UE C++，会打日志调试 |
-| C. Actor / Item | Item、旋转等交互物 | `AActor`、Tick、组件直觉 |
-| D. Pawn / 飞行等 | Bird 等示例 | Pawn、输入、在 Open World 里动起来 |
-| E. Character | `ACharacter`、Enhanced Input、Camera / SpringArm（Echo） | 第三人称角色与输入 |
-| F. Animation | AnimBP、Anim Instance C++、跳跃等 | 动画与 C++ 桥接 |
-| G. 内容与战斗向 | Quixel/资产、近战武器、可破坏物、敌人/生物、地牢 Packed Level 等 | 把玩法系统往完整原型推 |
+## 2. 文档主线（按主题啃，配合小实验）
 
-课页宣传点（方便你对照进度）：Open World、Quixel、地形、地牢、武器近战、可破坏掉宝、多种敌人、AnimBP Templates 等。
+从这里进：  
+https://dev.epicgames.com/documentation/en-us/unreal-engine/programming-with-cplusplus-in-unreal-engine  
 
-**跟课规则**
+建议顺序（自己在项目里各做一个小实验）：
 
-- 自己敲代码；卡编译 → 课 Q&A → [5.8 Release Notes](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-release-notes) / C++ 文档
-- 课内若仍是旧 Input，按课内 Enhanced Input 补充讲座走；与 5.8 冲突以官方文档为准
-- 不要用「改成蓝图」绕过 C++ 报错
+| 阶段 | 主题 | 你要会的 |
+|------|------|----------|
+| A | Gameplay classes / Actor / Component | 反射、`UCLASS`/`UPROPERTY`/`UFUNCTION` |
+| B | 输入（Enhanced Input） | 角色移动、镜头 |
+| C | 碰撞 / 重叠 / 定时器 / 委托 | 基础交互 |
+| D | UI（UMG）一点 | 血条/简单 HUD（可后置） |
+| E | 看 Lyra 目录 | 大项目怎么拆模块 |
 
----
+卡 API 查：https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-release-notes  
 
-## 2. 官方 Sample（并行浏览，不跟视频逐行抄）
+## 3. Epic Learning 视频（免费加餐）
 
-- 下载 **Lyra**，看模块拆分、输入、UI、GAS 等组织方式  
-- 介绍：https://dev.epicgames.com/community/learning/courses/Yj3/unreal-engine-lyra-sample-game  
+https://dev.epicgames.com/community/unreal-engine/learning  
 
----
+筛选：**Programming & Scripting** / C++ / Unreal Engine 5。  
+当「视频讲解」，仍以自己工程练习为准。
 
-## 3. 巩固
+## 4. 企业 Udemy（并行搜一次）
 
-主课核心（至少到 Character + Animation + 一套战斗/敌人）结束后，自开小项目任意题材：
+打开 https://tencent.udemy.com/ ，按 [enterprise-udemy.md](./enterprise-udemy.md) 搜。  
 
-- 玩法逻辑 **C++**；蓝图只绑资源/调参  
+- 有合适 **C++** 课 → 用它的章节当「跟练视频」，文档仍对照 5.8  
+- 没有 → 忽略，继续 1–3；或申请加购 Ulibarri  
 
----
+## 5. 巩固
+
+自开小项目（任意题材）：玩法 **C++**，蓝图只绑资源/调参。
 
 ## 和 AI 协作
 
-- 改 `.h/.cpp`，要求 `UCLASS` / `UPROPERTY` / `UFUNCTION`、注意 UE 内存与 GC  
-- 少贴蓝图截图让 AI「改图」
+改 `.h/.cpp`；要求遵守 UE 反射与内存习惯；少改蓝图图。
 
 ## 学习笔记
 
-（章节进度、5.8 API 差异、自己项目点子）
+（章节、企业站搜到的课名、5.8 差异）
