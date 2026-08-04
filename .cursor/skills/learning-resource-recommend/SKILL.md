@@ -97,11 +97,11 @@ Templates: see [folder-template.md](folder-template.md).
 
 | Folder | Focus |
 |--------|--------|
-| `microsoft-ai-courses/` | Agent / GenAI / Skills-oriented MS courses |
+| `microsoft-ai-courses/` | Agent / GenAI / Skills（GenAI → Agents；MCP 可选） |
 | `data-engineering/` | DE101 → Zoomcamp → Handbook |
 | `english-speaking-listening/` | NL life, listening + low-pressure speaking |
-| `unreal-engine/` | UE 5.8 + C++; default free Epic path if enterprise Udemy lacks Ulibarri |
-| `ai-infra/` | What AI Infra is; DMLS + Made With ML + DL.AI serving/LLMOps |
+| `unreal-engine/` | UE 5.8 + C++; Epic Quick Start first; enterprise Advanced RPG as advanced |
+| `ai-infra/` | DMLS + Made With ML + DL.AI serving/LLMOps; enterprise Production Track optional |
 
 New topics get a **new** top-level folder.
 

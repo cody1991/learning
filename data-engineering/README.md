@@ -18,7 +18,6 @@
 | Zoomcamp | https://github.com/DataTalksClub/data-engineering-zoomcamp | 主线免费课 |
 | Handbook | https://github.com/DataExpert-io/data-engineer-handbook | 导航 / 书单 |
 | Cookbook（可选） | https://github.com/andkret/Cookbook | 补充阅读 |
-| Roadmap（可选） | https://github.com/datastacktv/data-engineer-roadmap | 技能地图（偏旧，当清单用） |
 
 ## 进度
 

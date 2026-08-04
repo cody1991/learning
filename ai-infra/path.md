@@ -8,7 +8,7 @@
 - Serving LLMs：https://www.deeplearning.ai/courses/efficiently-serving-llms  
 - vLLM 短课：https://www.deeplearning.ai/courses/fast-and-efficient-llm-inference-with-vllm  
 - vLLM 项目：https://github.com/vllm-project/vllm  
-- 企业 Udemy：https://tencent.udemy.com/organization/home/  
+- 企业加餐（已质检）：https://tencent.udemy.com/course/generative-and-agentic-ai-in-production/  
 
 ---
 
@@ -37,16 +37,10 @@
 - 读 https://github.com/vllm-project/vllm 文档，能的话起最小 OpenAI-compatible 服务  
 - 中文补充：https://github.com/liguodongiot/llm-action  
 
-## 5. 企业 Udemy（并行）
+## 5. 企业加餐（可选）
 
-在 https://tencent.udemy.com/organization/home/ 搜（详见 skill `tencent-udemy-search`）：
-
-- `MLOps` / `LLMOps` / `Machine Learning Ops`  
-- `vLLM` / `LLM inference` / `model serving`  
-- `Kubernetes GPU` / `ML platform`  
-
-有课则记入 [resources.md](./resources.md) 笔记区，可替换部分短课视频时间。
+[AI Engineer Production Track](https://tencent.udemy.com/course/generative-and-agentic-ai-in-production/) — LLM/Agent **应用上线**（Vercel→云、FastAPI 等），偏产品工程，不替代 1–3 的 Infra 地图。
 
 ## 学习笔记
 
-（概念卡点、企业站搜到的课名）
+（概念卡点、跟课笔记）

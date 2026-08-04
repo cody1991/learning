@@ -29,19 +29,18 @@ AI Infra = 让模型在生产里跑得起来的层：**算力、训练/推理服
 
 细节：[comparison.md](./comparison.md) · [path.md](./path.md) · [resources.md](./resources.md)
 
-企业 Udemy 查课：https://tencent.udemy.com/organization/home/ （流程见项目 skill `tencent-udemy-search`）
-
-主线仍是上表免费资源。企业过关加餐见 [resources.md](./resources.md)。
+企业过关加餐：[AI Engineer Production Track](https://tencent.udemy.com/course/generative-and-agentic-ai-in-production/)（应用上线，不替代上方主线）。查课流程见 skill `tencent-udemy-search`。
 
 ## 进度
 
-- [ ] 读完「这是什么」+ comparison 里和 Agent/DE 的区别
+- [ ] 读完「这是什么」+ comparison
 - [ ] dmls-book / 原书：建立端到端系统图
 - [ ] Made With ML：跟一条 deploy 路径
 - [ ] 短课至少完成 LLMOps **或** Serving / vLLM 之一
 - [ ] （可选）本地或云上起一个最小 vLLM / 开源推理 demo
+- [ ] （可选）[Production Track](https://tencent.udemy.com/course/generative-and-agentic-ai-in-production/)
 
 ## 原则
 
 - 先地图，再工具；别一上来只背组件名
-- 企业站有相关课就用企业站；没有就走上方免费清单
+- 企业课须过质检才跟；主线默认免费清单

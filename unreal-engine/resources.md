@@ -12,12 +12,12 @@
 | Epic Learning | https://dev.epicgames.com/community/unreal-engine/learning |
 | Lyra 介绍 | https://dev.epicgames.com/community/learning/courses/Yj3/unreal-engine-lyra-sample-game |
 
-## 企业 Udemy
+## 企业 Udemy（过关课）
 
 | 名称 | 链接 |
 |------|------|
-| 腾讯企业 Udemy | https://tencent.udemy.com/ |
-| 搜课说明 | [enterprise-udemy.md](./enterprise-udemy.md) |
+| Advanced Action RPG（Vince Petrelli） | https://tencent.udemy.com/course/unreal-engine-5-advanced-action-rpg/ |
+| 说明 | [enterprise-udemy.md](./enterprise-udemy.md) |
 
 ## 公开站系统课（企业库常无；可申请加购）
 
@@ -39,4 +39,4 @@
 
 ## 笔记
 
-（企业站实际开通的课链接记这）
+（跟课笔记、5.8 差异）
