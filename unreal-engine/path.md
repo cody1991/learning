@@ -6,8 +6,8 @@
 - Programming with C++：https://dev.epicgames.com/documentation/en-us/unreal-engine/programming-with-cplusplus-in-unreal-engine  
 - Epic Learning：https://dev.epicgames.com/community/unreal-engine/learning  
 - Lyra：https://dev.epicgames.com/community/learning/courses/Yj3/unreal-engine-lyra-sample-game  
-- 企业站搜课：https://tencent.udemy.com/ （关键词见 [enterprise-udemy.md](./enterprise-udemy.md)）  
-- （可选）Ulibarri 公开课：https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/  
+- 企业进阶课（已质检）：https://tencent.udemy.com/course/unreal-engine-5-advanced-action-rpg/  
+- （可选加购）Ulibarri 公开课：https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/  
 
 ---
 
@@ -48,14 +48,11 @@ https://dev.epicgames.com/community/unreal-engine/learning
 筛选：**Programming & Scripting** / C++ / Unreal Engine 5。  
 当「视频讲解」，仍以自己工程练习为准。
 
-## 4. 企业 Udemy（质检过关才跟）
+## 4. 企业 Udemy 进阶（有基础后）
 
-打开 https://tencent.udemy.com/ ，见 [enterprise-udemy.md](./enterprise-udemy.md)。  
+直链跟练：[Advanced Action RPG / Vince Petrelli](https://tencent.udemy.com/course/unreal-engine-5-advanced-action-rpg/)（GAS C++）  
 
-- **进阶候选（有基础后）**：[Advanced Action RPG / Vince Petrelli](https://tencent.udemy.com/course/unreal-engine-5-advanced-action-rpg/)（GAS C++）  
-- **不当入门主课**：C++ Arsenal（大半零基础 C++）、蓝图课、百科式「Complete Guide」  
-- 仍没有合适课 → 继续 1–3；或申请加购 Ulibarri  
- 
+清单与说明：[enterprise-udemy.md](./enterprise-udemy.md)。入门仍靠上面 1–3；需要系统视频课可申请加购 Ulibarri。
 
 ## 5. 巩固
 

@@ -31,7 +31,7 @@ AI Infra = 让模型在生产里跑得起来的层：**算力、训练/推理服
 
 企业 Udemy 查课：https://tencent.udemy.com/organization/home/ （流程见项目 skill `tencent-udemy-search`）
 
-**企业站质检**：[Zero to Hero AI Infra](https://tencent.udemy.com/course/complete-guide-ai-infrastructure/) **不当主线**（理论堆砌、实操弱、差评指疑似 AI 生成）。细节见 [resources.md](./resources.md)。主线仍是上表免费资源。
+主线仍是上表免费资源。企业过关加餐见 [resources.md](./resources.md)。
 
 ## 进度
 

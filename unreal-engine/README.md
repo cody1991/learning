@@ -24,9 +24,9 @@
 
 - [ ] 安装 UE **5.8** + IDE
 - [ ] 完成 [C++ Quick Start](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-cpp-quick-start)
-- [ ] 在 [tencent.udemy.com](https://tencent.udemy.com/) 按 [enterprise-udemy.md](./enterprise-udemy.md) 搜一轮
 - [ ] 跟官方文档 + Epic Learning C++ 专题
 - [ ] 浏览 [Lyra](https://dev.epicgames.com/community/learning/courses/Yj3/unreal-engine-lyra-sample-game)
+- [ ] （进阶）[Advanced Action RPG](https://tencent.udemy.com/course/unreal-engine-5-advanced-action-rpg/)
 - [ ] 自开小项目巩固
 
 ## 原则

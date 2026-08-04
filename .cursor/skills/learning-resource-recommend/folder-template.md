@@ -39,8 +39,7 @@ Copy and trim. Write in Chinese unless the user asks otherwise. Keep files short
 
 ## 不优先 / 可跳过
 
-| 资源或做法 | 原因 |
-|------------|------|
+（可选；一句话原则即可，**不要罗列已否决的具体课程链接**）
 ```
 
 ## 01 / 02 resource files (optional)
@@ -49,7 +48,7 @@ Copy and trim. Write in Chinese unless the user asks otherwise. Keep files short
 # <Resource name>
 
 - 链接：
-- 角色：主线 | 基础 | 索引 | 跳过
+- 角色：主线 | 基础 | 索引 | 加餐
 - 状态：
 
 ## 是什么
