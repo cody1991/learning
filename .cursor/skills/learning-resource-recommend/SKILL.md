@@ -68,7 +68,7 @@ Rules:
 - Create a **sibling** directory under the repo root (not nested under another track)
 - **Always create `track.json`** so Learning Hub (`site/`) picks up the new course without code changes
 - **Independent tracks**: no cross-links between topic folders; no「和 XX 线的关系」sections
-- **Do not commit** unless the user asks
+- **Do not commit** unless the user asks；说「提交 / 推送」则立刻 commit + push，不要再确认
 - Reuse the folder shape below; **omit files that don't fit the track type**（见下方对照表）
 - `README.md` 最短清单必须含 **可点直链**；有 `path.md` / `resources.md` 时里面的主资源同样要有直链
 - `path.md`（若存在）应写出阶段步骤，不只写「打开课自己学」

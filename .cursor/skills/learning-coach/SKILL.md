@@ -21,7 +21,7 @@ Goal: the **user learns**; the agent is a coach, not a substitute student.
    - Upstream clones in `labs/` are often gitignored — never treat labs as the notes repo
 4. **Prefer 中文课本文** when `translations/zh-CN/...` exists; say so once and point to that path.
 5. **Persist only when useful.** Update track progress checkboxes after a checkpoint passes; don’t dump long AI essays into notes. User’s own 3–5 lines beat agent prose.
-6. **Don’t commit / push** unless asked.
+6. **Don’t commit / push** unless asked. If they say 提交 / 推送：立刻 commit + push，不要再确认。
 
 ## Session modes
 
