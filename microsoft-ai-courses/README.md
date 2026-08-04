@@ -22,6 +22,6 @@
 
 ## 进度
 
-- [ ] Generative AI — 挑重点课（Prompt / Function Calling / RAG）
+- [ ] Generative AI — 可全看；赶进度则优先 Prompt / Function Calling / RAG
 - [ ] AI Agents — Tool / Planning / MCP / Context
 - [ ] 动手：写一个 Cursor Skill 或 Agent 工具练手

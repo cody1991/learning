@@ -4,7 +4,7 @@
 - 中文 README：https://github.com/microsoft/generative-ai-for-beginners/blob/main/translations/zh-CN/README.md
 - 规模：约 11.6 万 star（2026-08）
 - 体量：21 课
-- 状态：**打基础阶段 — 挑重点学，不必全啃**
+- 状态：**打基础 — 可以全看**；赶进度再优先下面核心课
 
 ## 是什么
 
@@ -21,28 +21,25 @@
 
 ★★☆ — 三门里最友好。会一点 Python 或 TS 即可。
 
-## 建议优先课（面向 Agent / Skills）
+## 核心课直链（全看时按仓库 00→21；赶进度先这几门）
 
 | 课 | 主题 | 直链 |
 |----|------|------|
+| 00 | Course Setup | https://github.com/microsoft/generative-ai-for-beginners/tree/main/00-course-setup |
 | 04 | Prompt Fundamentals | https://github.com/microsoft/generative-ai-for-beginners/tree/main/04-prompt-engineering-fundamentals |
 | 05 | Advanced Prompts | https://github.com/microsoft/generative-ai-for-beginners/tree/main/05-advanced-prompts |
 | 11 | Function Calling | https://github.com/microsoft/generative-ai-for-beginners/tree/main/11-integrating-with-function-calling |
 | 15 | RAG | https://github.com/microsoft/generative-ai-for-beginners/tree/main/15-rag-and-vector-databases |
-| 01（可选） | Intro to GenAI | https://github.com/microsoft/generative-ai-for-beginners/tree/main/01-introduction-to-genai |
-| 02（可选） | Comparing LLMs | https://github.com/microsoft/generative-ai-for-beginners/tree/main/02-exploring-and-comparing-different-llms |
 
-环境搭建：https://github.com/microsoft/generative-ai-for-beginners/tree/main/00-course-setup  
+课表总览：https://github.com/microsoft/generative-ai-for-beginners#️-lessons  
 
-可跳过或后补：图片生成、Low Code、各厂商模型介绍、微调等。
+时间紧可后补：图像、Low Code、微调、各厂商模型介绍（19–21）。
 
 ## 进度
 
-- [ ] [04 Prompt Fundamentals](https://github.com/microsoft/generative-ai-for-beginners/tree/main/04-prompt-engineering-fundamentals)
-- [ ] [05 Advanced Prompts](https://github.com/microsoft/generative-ai-for-beginners/tree/main/05-advanced-prompts)
-- [ ] [11 Function Calling](https://github.com/microsoft/generative-ai-for-beginners/tree/main/11-integrating-with-function-calling)
-- [ ] [15 RAG](https://github.com/microsoft/generative-ai-for-beginners/tree/main/15-rag-and-vector-databases)
-- [ ] （可选）其它课
+- [ ] 环境：[00 Setup](https://github.com/microsoft/generative-ai-for-beginners/tree/main/00-course-setup)
+- [ ] （推荐全看）按仓库课表跟完，或至少完成 04 / 05 / 11 / 15
+- [ ] 进入 AI Agents 主线
 
 ## 学习笔记
 
