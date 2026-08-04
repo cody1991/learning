@@ -97,7 +97,9 @@ New topics get a **new** top-level folder.
 
 ## Related skill
 
-When the user has **Tencent enterprise Udemy** (`tencent.udemy.com`, 企业 Udemy) or a paid course may be missing from the company catalog, follow `.cursor/skills/tencent-udemy-search/SKILL.md` (search queries + request-content fallback). Do not assume public Udemy courses are available there.
+When the user has **Tencent enterprise Udemy** (`tencent.udemy.com`, 企业 Udemy) or a paid course may be missing from the company catalog, follow `.cursor/skills/tencent-udemy-search/SKILL.md`.
+
+**Default there**: open the site in the browser → user completes SSO → agent searches the catalog. Do not assume public Udemy courses are available; do not claim catalog contents while logged out.
 
 ## Anti-patterns
 

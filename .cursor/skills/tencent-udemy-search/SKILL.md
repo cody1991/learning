@@ -2,158 +2,152 @@
 name: tencent-udemy-search
 description: >-
   Finds and evaluates courses on Tencent enterprise Udemy Business
-  (tencent.udemy.com / organization home). Use when the user mentions
-  tencent.udemy.com, 企业 Udemy, 腾讯 Udemy, Udemy Business, organization/home,
-  or needs to check whether a public Udemy course exists in the company catalog.
+  (tencent.udemy.com / organization home) with user-assisted SSO login.
+  Use when the user mentions tencent.udemy.com, 企业 Udemy, 腾讯 Udemy,
+  Udemy Business, organization/home, 配合登录, or wants the agent to search
+  the company catalog (after they log in).
 ---
 
 # Tencent Udemy search
 
-Help the user find courses on **enterprise Udemy**, which is **not** the full public Udemy catalog.
+在 **企业 Udemy** 查课并评估。企业目录 **≠** 公开 https://www.udemy.com/ 全量。
+
+默认模式：**用户配合登录 → Agent 用浏览器搜课 → 写入学习笔记**。  
+不要默认改成「只丢关键词让用户自己搜」；只有用户明确说自己搜、或浏览器不可用时才降级。
 
 ## Canonical URLs
 
 - Organization home：https://tencent.udemy.com/organization/home/  
 - Site root：https://tencent.udemy.com/  
-- Public Udemy（对照用，课不一定在企业库）：https://www.udemy.com/  
+- Public Udemy（对照）：https://www.udemy.com/  
 
 ## Critical facts
 
-1. **企业目录 ⊂ 公开站**。公开站有课 ≠ 企业能学；搜不到很常见。  
-2. Agent **通常无法登录**企业站代搜。默认输出：**搜索词清单 + 筛选标准 + 若无结果时的备选（免费/申请加购）**。  
-3. 用户贴回企业站课名/链接后，再帮他判断是否值得跟、如何写入对应学习文件夹。  
-4. 推荐付费公开课时，**同时**给出企业站搜索词，并说明可能不在库。
+1. 未登录会跳到公司 **SSO / Identity Portal**；Agent **不能替用户输密码或过 MFA**。  
+2. 登录必须由用户在 Cursor 浏览器（或用户指定的已登录会话）里完成。  
+3. 登录成功后，Agent **可以**继续：搜索、打开课页、读大纲、对比是否值得跟。  
+4. 公开站有课 ≠ 企业库有；未登录前 **禁止**声称「库里有/没有某某课」。  
+5. 推荐公开付费课时：给出公开 URL + 说明要进企业站验证；并主动走本 skill 的登录协作流程（若用户愿意）。
 
-## Workflow
+## Workflow（登录协作 — 主路径）
 
-### 1. Confirm topic & constraints
+### 0. Confirm topic
 
-- Topic（UE C++ / AI Infra / DE / 英语…）  
-- Must-have keywords（如必须 C++、必须 LLM serving）  
-- Hard excludes（如不要纯蓝图）
+- Topic（UE C++ / AI Infra / DE / 英语 / GenAI…）  
+- Must-have / hard excludes  
+- 准备好该主题的搜索词包（见下方）
 
-### 2. Give search queries to paste
+### 1. Open enterprise Udemy in browser
 
-Always give **5～10 条**可复制搜索词（英文为主，可附中文）。  
-模式：`主题 + 技术约束`、`工具名`、`常见出版方/讲师`。
+1. 用浏览器工具打开：https://tencent.udemy.com/organization/home/  
+   - 需要用户看见并操作登录时：navigate 使用可见标签（`position: "active"` 或用户要求的 side）  
+2. `browser_snapshot`（或截图）确认状态：  
+   - **已在 organization home / 能看到搜索框** → 跳到步骤 3  
+   - **SSO / Identity Portal / 登录页** → 步骤 2  
 
-### 3. Give selection criteria
+### 2. Hand off login to the user（停住，别瞎点）
 
-短表：要什么 / 不要什么（看标题、大纲、是否含动手、更新年份）。
+明确告诉用户（可原样用）：
 
-### 4. Tell user what to do on the site
+> 企业 Udemy 需要你登录。请在我打开的浏览器窗口完成 SSO（账号/扫码/MFA）。  
+> 登录成功并看到 organization 首页或课程库后，回复「登录好了」或「继续」。  
+> 我不会替你输入密码。
 
-1. 打开 https://tencent.udemy.com/organization/home/  
-2. 用站内搜索逐条试关键词  
-3. 打开大纲确认技术栈  
-4. 把 **课名 + 企业站 URL**（或截图要点）发回聊天  
+然后 **等待用户确认**。不要循环盲点登录按钮；不要索要密码。
 
-### 5. If nothing found
+用户确认后：再 snapshot，确认已离开 IdP、进入 `tencent.udemy.com` 业务页，再继续。
 
-按顺序建议：
+### 3. Search in the logged-in session
 
-1. 换近义词再搜一轮（见下方主题词库）  
-2. 走该主题学习文件夹里的 **免费主线**  
-3. **申请加购**：把公开课 URL 交给管理员 / content request（许多 Udemy Business 支持）  
-4. 不要假装企业库里「应该有」某门网红课  
+1. 用站内搜索，按主题词包 **逐条**搜（先高信号词）  
+2. 记录：课名、讲师、企业站 URL、是否含目标技术栈  
+3. 打开 1～3 门候选课的大纲页，核对「要/不要」标准  
+4. 汇总短表给用户：推荐跟 / 可作加餐 / 跳过  
 
-### 6. Persist when useful
+### 4. If catalog has nothing suitable
 
-- 记入对应 track 的 `resources.md`「企业站实际课」表  
-- UE 主题可同步 `unreal-engine/enterprise-udemy.md` 笔记区  
+1. 换近义词再搜一轮  
+2. 指向对应学习文件夹的 **免费主线**（具体 URL）  
+3. 建议 **申请加购**公开课（把公开 URL 给管理员 / content request）  
+4. 不要编造企业库结果  
+
+### 5. Persist
+
+- 写入对应 track 的 `resources.md`「企业站实际课」表（课名 + 企业 URL + 备注）  
+- UE → 也可记 `unreal-engine/enterprise-udemy.md`  
 - AI Infra → `ai-infra/resources.md`  
 
-Do not cross-link unrelated learning tracks in README 正文 beyond necessary.
+## Fallback（用户不愿用浏览器协作时）
+
+才降级为：
+
+1. 给出 5～10 条可复制搜索词 + 筛选表  
+2. 请用户自己打开 https://tencent.udemy.com/organization/home/ 搜  
+3. 用户贴回课名/链接后，再评估并落盘  
 
 ## Topic query packs
 
 ### Unreal Engine（C++）
 
-Search：
-
-- `Unreal Engine 5 C++`  
-- `Unreal C++`  
-- `UE5 C++`  
-- `Unreal Engine Multiplayer`  
-- `GameDev.tv Unreal`  
+- `Unreal Engine 5 C++` · `Unreal C++` · `UE5 C++`  
+- `Unreal Engine Multiplayer` · `GameDev.tv Unreal`  
 - `Stephen Ulibarri` / `Druid Mechanics`  
-
-Prefer：大纲含 C++ / Visual Studio / Character / Enhanced Input。  
-Avoid：纯 Blueprint / 只做关卡美术。  
-Public fallback：https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/  
+- Prefer：C++ / VS / Character / Enhanced Input  
+- Avoid：纯 Blueprint  
+- Public fallback：https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/  
 
 ### AI Infra / MLOps / LLM serving
 
-Search：
-
-- `MLOps`  
-- `LLMOps`  
-- `Machine Learning Operations`  
-- `LLM inference` / `model serving`  
-- `vLLM`  
-- `Kubernetes GPU` / `ML platform`  
-- `Designing Machine Learning Systems`（若有书/课包装）  
-
-Prefer：部署、监控、serving、pipeline；不仅是「调 API 做聊天应用」。  
-Avoid：纯 Prompt 入门、纯算法数学课冒充 Infra。  
-Free fallback：见 `ai-infra/` 最短清单。  
+- `MLOps` · `LLMOps` · `Machine Learning Operations`  
+- `LLM inference` · `model serving` · `vLLM`  
+- `Kubernetes GPU` · `ML platform`  
+- Prefer：部署/监控/serving；Avoid：纯 Prompt 入门冒充 Infra  
+- Free fallback：`ai-infra/` 最短清单  
 
 ### Data Engineering
 
-Search：
-
-- `Data Engineering`  
-- `dbt`  
-- `Apache Airflow`  
-- `Spark`  
-- `Kafka data`  
+- `Data Engineering` · `dbt` · `Apache Airflow` · `Spark` · `Kafka data`  
 
 ### English speaking / listening
 
-Search：
+- `English speaking` · `Business English conversation`  
+- Prefer：会话/发音；Avoid：只背单词当口语主线  
 
-- `English speaking`  
-- `Business English conversation`  
-- `IELTS listening`（仅当目标是考试）  
-- Prefer：会话/发音；Avoid：只背单词词表课当口语主线  
+### Generative AI / Agents
 
-### Generative AI / Agents（若要用企业站补）
+- `Generative AI` · `LLM` · `AI Agents` · `LangChain` · `Prompt Engineering`  
 
-Search：
+## Chat templates
 
-- `Generative AI`  
-- `LLM`  
-- `AI Agents`  
-- `LangChain`  
-- `Prompt Engineering`  
-
-Note：与 `microsoft-ai-courses/` 免费 GitHub 课可并存；企业视频当加餐。
-
-## Response template (chat)
+### A. 开始协作登录
 
 ```markdown
-## 企业 Udemy 怎么搜
+我来打开企业 Udemy。请在弹出的浏览器里完成公司 SSO 登录。
 入口：https://tencent.udemy.com/organization/home/
 
-### 请复制搜索
-- `...`
-- `...`
+登录好并看到课程首页后，回复「登录好了」。
+本次要搜的主题：<topic>
+优先关键词：<keywords>
+```
 
-### 怎么判断值不值得跟
-| 要 | 不要 |
-|----|------|
+### B. 搜完汇报
 
-### 若搜不到
-1. …
-2. 免费主线：<具体 URL>
-3. 申请加购公开课：<公开 URL>
+```markdown
+## 企业库结果（<topic>）
+| 课名 | 链接 | 结论 |
+|------|------|------|
+| … | https://tencent.udemy.com/... | 推荐跟 / 加餐 / 跳过 |
 
-把搜到的课名/链接发我，我帮你看是否适合进 <topic>/resources.md。
+### 建议
+- 主课：…
+- 若都不合适：免费主线 … / 申请加购 …
 ```
 
 ## Anti-patterns
 
-- 只丢公开 Udemy 链接，假装企业一定能看  
-- 让用户「随便搜 Unreal」而无约束词  
-- 在未登录企业站时声称「库里有/没有某某课」  
+- 未登录就断言库里有没有某课  
+- 替用户输入密码 / 绕过 MFA  
+- 在 SSO 页反复自动点击却不交接给用户  
+- 只丢公开 Udemy 链接假装企业一定能看  
+- 登录协作可用时，却只丢关键词让用户自己搜（除非用户要求）  
 - 为企业库强推纯蓝图课充当 C++ 主线  
