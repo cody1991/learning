@@ -90,9 +90,14 @@ Templates: see [folder-template.md](folder-template.md).
 | `microsoft-ai-courses/` | Agent / GenAI / Skills-oriented MS courses |
 | `data-engineering/` | DE101 → Zoomcamp → Handbook |
 | `english-speaking-listening/` | NL life, listening + low-pressure speaking |
-| `unreal-engine/` | UE 5.8 + C++, Ulibarri + official docs |
+| `unreal-engine/` | UE 5.8 + C++; default free Epic path if enterprise Udemy lacks Ulibarri |
+| `ai-infra/` | What AI Infra is; DMLS + Made With ML + DL.AI serving/LLMOps |
 
 New topics get a **new** top-level folder.
+
+## Related skill
+
+When the user has **Tencent enterprise Udemy** (`tencent.udemy.com`, 企业 Udemy) or a paid course may be missing from the company catalog, follow `.cursor/skills/tencent-udemy-search/SKILL.md` (search queries + request-content fallback). Do not assume public Udemy courses are available there.
 
 ## Anti-patterns
 
