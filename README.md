@@ -10,6 +10,7 @@
 |------|------|
 | `microsoft-ai-courses/` | GenAI → Agents |
 | `data-engineering/` | DE101 → Zoomcamp |
+| `data-science/` | Handbook → ML Crash Course → ML Zoomcamp |
 | `english-speaking-listening/` | 精听 + 跟读 |
 | `ai-infra/` | DMLS → Made With ML → serving |
 | `unreal-engine/` | UE 5.8 C++：官方 Quick Start → Climbing → Action RPG |
@@ -29,6 +30,7 @@
 | 荷兰语 | 新开线 | [learndutch.org](https://www.learndutch.org/) 每天 15–20 分钟 |
 | AI Infra | 路径合理 | 读 `ai-infra/README`「这是什么」→ DMLS 地图 / DL.AI 短课 |
 | DE | 路径合理 | DE101 → Zoomcamp |
+| Data Science | 新开线 | [Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) → [ML Crash Course](https://developers.google.com/machine-learning/crash-course) → [ML Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp) |
 | UE C++ | 企业课已复核 | 官方 [C++ Quick Start](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-cpp-quick-start) → 文档小练 → Climbing → Action RPG |
 | 理财常识 | 新开线 | [Nibud](https://www.nibud.nl/) 做预算 → [Bogleheads Getting started](https://www.bogleheads.org/wiki/Getting_started) |
 

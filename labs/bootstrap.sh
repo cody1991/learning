@@ -32,10 +32,14 @@ case "${1:-all}" in
     clone_one data-engineering-zoomcamp \
       https://github.com/DataTalksClub/data-engineering-zoomcamp.git
     ;;&
+  machine-learning-zoomcamp|ml-zoomcamp|mlzoomcamp)
+    clone_one machine-learning-zoomcamp \
+      https://github.com/DataTalksClub/machine-learning-zoomcamp.git
+    ;;&
   all) ;;
   *)
     echo "Unknown course: $1"
-    echo "Usage: $0 [all|genai|agents|mcp|zoomcamp|<slug>]"
+    echo "Usage: $0 [all|genai|agents|mcp|zoomcamp|ml-zoomcamp|<slug>]"
     exit 1
     ;;
 esac

@@ -22,12 +22,14 @@ learning/
 | 目录 | 笔记 | 上游 |
 |------|------|------|
 | `microsoft-generative-ai-for-beginners/` | `microsoft-ai-courses/` | https://github.com/microsoft/generative-ai-for-beginners |
+| `machine-learning-zoomcamp/` | `data-science/` | https://github.com/DataTalksClub/machine-learning-zoomcamp |
 
 ## 新增实操课
 
 ```bash
 # 方式 1：脚本
 ./labs/bootstrap.sh microsoft-generative-ai-for-beginners
+./labs/bootstrap.sh ml-zoomcamp
 
 # 方式 2：手动
 cd labs
