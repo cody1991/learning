@@ -10,6 +10,9 @@
    https://github.com/microsoft/ai-agents-for-beginners
 3. （可选）[MCP for Beginners](https://github.com/microsoft/mcp-for-beginners) — 专门做工具协议时再看
 
+**本地实操**（本仓集中目录）：[`labs/`](../labs/)  
+GenAI 代码：[`labs/microsoft-generative-ai-for-beginners/`](../labs/microsoft-generative-ai-for-beginners/)
+
 对比见 [comparison.md](./comparison.md)。
 
 ## 课程一览

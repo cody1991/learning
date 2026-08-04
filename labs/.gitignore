@@ -1,0 +1,20 @@
+# Local secrets & tooling
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.DS_Store
+node_modules/
+.ipynb_checkpoints/
+*.pem
+secrets/
+
+# Upstream course clones (bootstrap locally; do not bloat this notes repo)
+microsoft-generative-ai-for-beginners/
+microsoft-ai-agents-for-beginners/
+microsoft-mcp-for-beginners/
+data-engineering-zoomcamp/
+**/translations/

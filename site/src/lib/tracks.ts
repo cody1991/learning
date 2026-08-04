@@ -7,6 +7,7 @@ export const REPO_ROOT = path.resolve(process.cwd(), '..');
 const SKIP = new Set([
   'site',
   'docs',
+  'labs',
   '.cursor',
   '.github',
   'node_modules',

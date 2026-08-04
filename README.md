@@ -14,6 +14,8 @@
 | `ai-infra/` | DMLS → Made With ML → serving |
 | `unreal-engine/` | UE 5.8 C++ |
 
+**实操代码**：本仓 [`labs/`](./labs/)（跟课 clone / venv；与各 track 笔记分开，集中管理）。
+
 ## 新增一条学习线
 
 1. 新建 `<slug>/`（kebab-case）

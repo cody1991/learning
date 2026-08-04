@@ -5,6 +5,7 @@
 - 规模：约 11.6 万 star（2026-08）
 - 体量：21 课
 - 状态：**打基础 — 可以全看**；赶进度再优先下面核心课
+- **本地实操**：[`labs/microsoft-generative-ai-for-beginners/`](../labs/microsoft-generative-ai-for-beginners/)（本仓集中目录）
 
 ## 是什么
 
@@ -37,7 +38,8 @@
 
 ## 进度
 
-- [ ] 环境：[00 Setup](https://github.com/microsoft/generative-ai-for-beginners/tree/main/00-course-setup)
+- [ ] 本地实操目录已就绪（`labs/microsoft-generative-ai-for-beginners`）
+- [ ] 环境：按课内 [00 Setup](https://github.com/microsoft/generative-ai-for-beginners/tree/main/00-course-setup) 配 `.env`（API Key，勿提交）
 - [ ] （推荐全看）按仓库课表跟完，或至少完成 04 / 05 / 11 / 15
 - [ ] 进入 AI Agents 主线
 

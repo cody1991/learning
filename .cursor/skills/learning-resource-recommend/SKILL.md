@@ -82,6 +82,8 @@ Rules:
 
 ## Folder layout
 
+笔记 track（站点收录）：
+
 ```text
 <topic-slug>/
 ├── track.json          # 必有：站点目录元数据（见下）
@@ -92,6 +94,16 @@ Rules:
 ├── resources.md        # 链接较多时：纯链接表（可选；短清单可只放在 README）
 ├── 01-*.md, 02-*.md…   # 多门「跟课笔记」时：一门一文件（可选）
 └── <topic-extra>.md    # 少数主题特例（如 UE 的 enterprise-udemy.md）
+```
+
+实操（本仓集中一处，不进 Learning Hub 卡片）：
+
+```text
+labs/
+├── README.md
+├── bootstrap.sh
+├── .gitignore
+└── <course-slug>/      # clone；默认不提交上游源码
 ```
 
 Slug: lowercase kebab-case（`data-engineering`, `unreal-engine`）。
@@ -116,7 +128,7 @@ Learning Hub（`site/`）会扫描仓库根下「含 `README.md` + `track.json`�
 | `firstCourse` | 「第一门」展示文案（与 README 一致） |
 | `order` | 排序（小的在前）；新线用比现有最大 order 更大的整数 |
 
-排除目录（不会当 track）：`site`、`docs`、`.cursor`、`.github`、`node_modules`。
+排除目录（不会当 track）：`site`、`docs`、`labs`、`.cursor`、`.github`、`node_modules`。
 
 ### 什么时候用哪个文件
 
@@ -130,6 +142,7 @@ Learning Hub（`site/`）会扫描仓库根下「含 `README.md` + `track.json`�
 | `resources.md` | 链接多、不想把 README 撑爆 | ai-infra / UE / english |
 | `01-*.md`… | **多门独立资源**且要各自进度/笔记 | DE、microsoft-ai |
 | 特例文件 | 仅该主题需要的补充 | `unreal-engine/enterprise-udemy.md` |
+| `labs/<slug>/` | 跟课源码实操（全仓共用一个 `labs/`） | GenAI clone；见 `labs/README.md` |
 
 **刻意不统一的部分**：语言线没有 `path.md`（用 `routine.md`）；单课/短清单线可以没有 `01-*.md`；没有企业课的线不必造 `enterprise-*.md`。
 
@@ -148,6 +161,19 @@ Templates: see [folder-template.md](folder-template.md).
 | `ai-infra/` | DMLS + Made With ML + DL.AI serving/LLMOps; enterprise Production Track optional |
 
 New topics get a **new** top-level folder.
+
+## Related: hands-on labs
+
+Code clones live **inside this repo** under a single folder:
+
+`labs/<course-slug>/`
+
+- Notes stay in `<track>/` (README, path, checkboxes)
+- Course source / venv / `.env` go under `labs/`
+- When a track needs running code: `labs/bootstrap.sh` or `git clone` into `labs/`; link the path from the track note
+- Do **not** scatter course clones into each track folder; do **not** commit `.env` / `.venv`
+- Upstream course trees are gitignored by default (bootstrap locally) so the notes repo stays small
+- `labs/` is excluded from Learning Hub track discovery (no `track.json`)
 
 ## Related skill
 
