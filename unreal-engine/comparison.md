@@ -6,13 +6,16 @@
 
 ## 主课：Ulibarri UE5 C++ Ultimate
 
+- 直链：https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/
+- 代码：https://github.com/DruidMech/UE5_TheUltimateDeveloperCourse
+
 | 优点 | 说明 |
 |------|------|
-| C++ 主线完整 | Actor、Component、碰撞、UI、AI、存档等一条龙 |
-| 社区与配套仓活跃 | 有 GitHub 课仓可对照 |
+| C++ 主线完整 | 从 Open World / Item / Character / Anim 做到战斗与敌人 |
+| 社区与配套仓活跃 | GitHub `Slash` 工程可对照 |
 | 少依赖「纯蓝图思维」 | 适合继续用 AI 写代码，而不是拖节点 |
 
-瑕疵：录制版本通常不是最新点的 5.8 → **用 5.8 建工程 + 官方文档补差** 即可，不必等「5.8 重录版」。
+瑕疵：课页写明有 **5.7** 更新，未必逐条对齐 5.8 → **本地用 5.8 + 官方文档补差** 即可。
 
 ## 官方：5.8 文档 + Sample
 
