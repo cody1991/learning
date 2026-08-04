@@ -35,6 +35,13 @@ Do not over-ask. Infer from chat when possible.
 - Prefer current, maintained sources (official docs, high-star courses, active cohorts)
 - Use web/GitHub research tools when recommending from the internet (agent-reach / `gh` / docs fetch)
 - Note version skew honestly (e.g. best course is 5.4-recorded, target runtime is 5.8)
+- **Quality gate before recommending any Udemy / enterprise catalog hit**:
+  - Inspect curriculum depth (project chapters, not keyword-stuffed weekly surveys)
+  - Read low-star reviews for patterns: AI-generated, PPT-reading, no live coding, refund rage
+  - Prefer ≥~4.5 with substantive sample size **and** concrete positive craft signals (GAS, labs, shipping)
+  - **In-catalog ≠ recommend.** If enterprise has a weak course, say so and keep free/official primary
+  - **「我的学习 / 继续学习 / 已开始」≠ quality.** Ignore enrollment progress when ranking; recommend only what passes the quality gate
+  - Reject / demote: 「Zero to Hero / Complete Guide」mega-surveys, cert dump courses as mainline, beginner C++ pads sold as UE courses
 
 ### 3. Recommend (chat first)
 
@@ -48,7 +55,7 @@ Keep the reply short:
 
 **Always include concrete URLs** for primary picks (course page, docs, GitHub). Avoid「去某某站搜索课名」unless no stable URL exists — then say so.
 
-**Quality > novelty > completeness.** Prefer one excellent path over a long list.
+**Quality > novelty > completeness.** Prefer one excellent path over a long list. Never pad shortlists with mediocre enterprise fills.
 
 ### 4. Persist folder (when user agrees or says continue)
 

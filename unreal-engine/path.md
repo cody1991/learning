@@ -48,12 +48,14 @@ https://dev.epicgames.com/community/unreal-engine/learning
 筛选：**Programming & Scripting** / C++ / Unreal Engine 5。  
 当「视频讲解」，仍以自己工程练习为准。
 
-## 4. 企业 Udemy（并行搜一次）
+## 4. 企业 Udemy（质检过关才跟）
 
-打开 https://tencent.udemy.com/ ，按 [enterprise-udemy.md](./enterprise-udemy.md) 搜。  
+打开 https://tencent.udemy.com/ ，见 [enterprise-udemy.md](./enterprise-udemy.md)。  
 
-- 有合适 **C++** 课 → 用它的章节当「跟练视频」，文档仍对照 5.8  
-- 没有 → 忽略，继续 1–3；或申请加购 Ulibarri  
+- **进阶候选（有基础后）**：[Advanced Action RPG / Vince Petrelli](https://tencent.udemy.com/course/unreal-engine-5-advanced-action-rpg/)（GAS C++）  
+- **不当入门主课**：C++ Arsenal（大半零基础 C++）、蓝图课、百科式「Complete Guide」  
+- 仍没有合适课 → 继续 1–3；或申请加购 Ulibarri  
+ 
 
 ## 5. 巩固
 
