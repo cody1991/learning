@@ -10,7 +10,7 @@
 |------|------|
 | `microsoft-ai-courses/` | GenAI → Agents |
 | `data-engineering/` | DE101 → Zoomcamp |
-| `english-speaking-listening/` | 精听 + 低压力口语 |
+| `english-speaking-listening/` | 精听 + 跟读 |
 | `ai-infra/` | DMLS → Made With ML → serving |
 | `unreal-engine/` | UE 5.8 C++ |
 

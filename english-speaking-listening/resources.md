@@ -17,11 +17,11 @@
 
 | 资源 | 链接 | 何时开 |
 |------|------|--------|
-| italki | https://www.italki.com/ | 跟读不再抵触后，每周 1×25 分钟 |
+| italki | https://www.italki.com/ | 跟读习惯稳定后，每周 1×25 分钟 |
 | Preply | https://www.preply.com/ | italki 备选 |
 | All Ears English | https://www.allearsenglish.com/ | 6 Minute 明显偏简单时 |
 | ELSA Speak | https://elsaspeak.com/ | 想单独抠发音时 |
 
 ## 学习笔记
 
-（练的过程中记下：哪集难、哪些连读总听不出、开口卡在哪）
+（练的过程中记下：哪集难、哪些连读总听不出、跟读卡在哪）
