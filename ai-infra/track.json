@@ -1,0 +1,6 @@
+{
+  "title": "AI Infra",
+  "summary": "概念地图 → 生产路径 → LLM serving",
+  "firstCourse": "Designing ML Systems (dmls-book)",
+  "order": 4
+}

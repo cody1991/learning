@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { discoverTracks, getTrack, listTrackDocs, readTrackMarkdown } from '../../../lib/tracks';
+import { renderMarkdown } from '../../../lib/markdown';
+
+export function getStaticPaths() {
+  const paths = [];
+  for (const track of discoverTracks()) {
+    for (const doc of listTrackDocs(track.slug)) {
+      if (doc.id === '') continue;
+      paths.push({ params: { slug: track.slug, doc: doc.id } });
+    }
+  }
+  return paths;
+}
+
+const { slug, doc: docRaw } = Astro.params;
+if (!slug || docRaw == null) throw new Error('missing params');
+const docParam = Array.isArray(docRaw) ? docRaw.join('/') : String(docRaw);
+
+const track = getTrack(slug);
+if (!track) throw new Error(`unknown track: ${slug}`);
+
+const docs = listTrackDocs(slug);
+const current = docs.find((d) => d.id === docParam);
+if (!current) throw new Error(`unknown doc: ${docParam}`);
+
+const raw = readTrackMarkdown(slug, docParam);
+if (raw == null) throw new Error(`missing file for ${slug}/${docParam}`);
+
+const base = import.meta.env.BASE_URL;
+const html = renderMarkdown(raw, slug, base);
+---
+
+<BaseLayout title={`${current.label} · ${track.title}`} description={track.summary}>
+  <div class="layout-doc">
+    <aside class="side-nav">
+      <h2>{track.title}</h2>
+      <ul>
+        {
+          docs.map((doc) => {
+            const href =
+              doc.id === '' ? `${base}tracks/${slug}/` : `${base}tracks/${slug}/${doc.id}/`;
+            return (
+              <li>
+                <a href={href} aria-current={doc.id === docParam ? 'page' : undefined}>
+                  {doc.label}
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </aside>
+    <article class="prose" data-pagefind-body set:html={html} />
+  </div>
+</BaseLayout>

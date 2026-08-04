@@ -65,12 +65,15 @@ Create a **sibling** directory under the repo root (not nested under another tra
 
 Rules:
 
+- Create a **sibling** directory under the repo root (not nested under another track)
+- **Always create `track.json`** so Learning Hub (`site/`) picks up the new course without code changes
 - **Independent tracks**: no cross-links between topic folders; no「和 XX 线的关系」sections
 - **Do not commit** unless the user asks
 - Reuse the folder shape below; **omit files that don't fit the track type**（见下方对照表）
 - `README.md` 最短清单必须含 **可点直链**；有 `path.md` / `resources.md` 时里面的主资源同样要有直链
 - `path.md`（若存在）应写出阶段步骤，不只写「打开课自己学」
 - **Only recommended / optional keepers** go into markdown tables; no「不推荐 / 跳过 / 水课」entries
+- After creating a track, mention：站点下次 build 会自动出现在首页；本地可在 `site/` 跑 `npm run dev`
 
 ### 5. Aftercare
 
@@ -81,6 +84,7 @@ Rules:
 
 ```text
 <topic-slug>/
+├── track.json          # 必有：站点目录元数据（见下）
 ├── README.md           # 必有：目标、最短清单（含直链）、进度勾选
 ├── comparison.md       # 必有：为什么选这些（过关资源对比）
 ├── path.md             # 技术线：按阶段怎么学（有序步骤 + 直链）
@@ -92,10 +96,33 @@ Rules:
 
 Slug: lowercase kebab-case（`data-engineering`, `unreal-engine`）。
 
+### track.json（站点自动发现 — 新建线必写）
+
+Learning Hub（`site/`）会扫描仓库根下「含 `README.md` + `track.json`」的目录并生成首页卡片 / 路由。**新建 track 时必须同时写入 `track.json`，不必改 Astro 代码。**
+
+```json
+{
+  "title": "Short display name",
+  "summary": "One-line what this track is for",
+  "firstCourse": "What to open first",
+  "order": 10
+}
+```
+
+| 字段 | 含义 |
+|------|------|
+| `title` | 首页卡片标题 |
+| `summary` | 一句话定位 |
+| `firstCourse` | 「第一门」展示文案（与 README 一致） |
+| `order` | 排序（小的在前）；新线用比现有最大 order 更大的整数 |
+
+排除目录（不会当 track）：`site`、`docs`、`.cursor`、`.github`、`node_modules`。
+
 ### 什么时候用哪个文件
 
 | 文件 | 何时要 | 例子 |
 |------|--------|------|
+| `track.json` | **每条线都要**（进 Learning Hub） | 所有 track |
 | `README.md` | **每条线都要** | 所有 track |
 | `comparison.md` | **每条线都要** | 所有 track |
 | `path.md` | 技术课、有「第几步做什么」 | ai-infra / DE / UE |
@@ -106,7 +133,7 @@ Slug: lowercase kebab-case（`data-engineering`, `unreal-engine`）。
 
 **刻意不统一的部分**：语言线没有 `path.md`（用 `routine.md`）；单课/短清单线可以没有 `01-*.md`；没有企业课的线不必造 `enterprise-*.md`。
 
-**必须统一的部分**：每条线都能从 `README` 最短清单点开主资源；技术线的学习步骤在 `path.md` 里有直链；笔记里不写已否决的课。
+**必须统一的部分**：`track.json` + `README` 最短清单可点直链；技术线步骤在 `path.md`；笔记不写已否决的课；勾选进度写在 README / 分课笔记里供 `/progress` 汇总。
 
 Templates: see [folder-template.md](folder-template.md).
 
@@ -138,3 +165,5 @@ When the user has **Tencent enterprise Udemy** (`tencent.udemy.com`, 企业 Udem
 - Writing「见下方 / 仓库内某处 / 去站内搜索」without a concrete URL for primary items
 - Priority lesson lists without deep links to lesson folders (for multi-lesson courses)
 - Persisting rejected / 「不推荐」courses into track markdown
+- Creating a new track **without `track.json`**（站点发现不到）
+- Hand-editing `site/` just to register a new course（应靠约定自动发现）

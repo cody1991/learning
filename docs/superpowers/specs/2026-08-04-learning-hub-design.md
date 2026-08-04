@@ -2,7 +2,7 @@
 
 日期：2026-08-04  
 仓库：https://github.com/cody1991/learning  
-状态：待用户确认后进入实现计划
+状态：已确认并实现（`site/` + GitHub Actions Pages）
 
 ## 1. 目标
 

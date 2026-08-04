@@ -2,8 +2,20 @@
 
 Copy and trim. Write in Chinese unless the user asks otherwise. Keep files short.
 
-**每条线必有**：`README.md` + `comparison.md`。  
-其余按 track 类型选用（见 `SKILL.md` 对照表），不要为了「长得一样」硬造空文件。
+**每条线必有**：`track.json` + `README.md` + `comparison.md`。  
+其余按 track 类型选用（见 `SKILL.md` 对照表），不要为了「长得一样」硬造空文件。  
+`track.json` 让 Learning Hub 自动收录，勿漏。
+
+## track.json
+
+```json
+{
+  "title": "<短标题>",
+  "summary": "<一句话定位>",
+  "firstCourse": "<第一门 / 第一件事>",
+  "order": 10
+}
+```
 
 ## README.md
 

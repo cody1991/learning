@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { discoverTracks } from '../lib/tracks';
+
+const tracks = discoverTracks();
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Learning Hub" description="学习笔记书架：Microsoft AI、DE、英语、AI Infra、UE 等。">
+  <section class="hero">
+    <h1>Learning Hub</h1>
+    <p>把仓库里的学习线摆上书架。改 Markdown，站点下次构建就会更新。</p>
+  </section>
+
+  <div class="search-wrap" id="search">
+    <div id="search-ui"></div>
+  </div>
+
+  <ol class="track-list">
+    {
+      tracks.map((track, i) => (
+        <li>
+          <a
+            class="track-card"
+            href={`${base}tracks/${track.slug}/`}
+            style={`animation-delay: ${0.08 + i * 0.05}s`}
+          >
+            <span class="meta">第一门 · {track.firstCourse}</span>
+            <h2>{track.title}</h2>
+            <p>{track.summary}</p>
+          </a>
+        </li>
+      ))
+    }
+  </ol>
+</BaseLayout>
+
+<script is:inline define:vars={{ base }}>
+  window.addEventListener('DOMContentLoaded', () => {
+    const script = document.createElement('script');
+    script.src = `${base}pagefind/pagefind-ui.js`;
+    script.onload = () => {
+      // @ts-ignore
+      new PagefindUI({
+        element: '#search-ui',
+        showImages: false,
+        baseUrl: base,
+        bundlePath: `${base}pagefind/`,
+      });
+    };
+    document.body.appendChild(script);
+  });
+</script>

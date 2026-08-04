@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { collectProgress } from '../lib/progress';
+
+const rows = collectProgress();
+const base = import.meta.env.BASE_URL;
+const grandTotal = rows.reduce((s, r) => s + r.total, 0);
+const grandDone = rows.reduce((s, r) => s + r.done, 0);
+---
+
+<BaseLayout title="进度" description="从各 track Markdown 勾选汇总的学习进度。">
+  <section class="hero">
+    <h1>进度</h1>
+    <p class="note">
+      来自笔记里的 <code>- [ ]</code> / <code>- [x]</code>。改勾选后需重新构建站点才会更新。当前合计
+      <strong>{grandDone}/{grandTotal || 0}</strong>。
+    </p>
+  </section>
+
+  <div class="progress-grid">
+    {
+      rows.map((row, i) => {
+        const pct = row.total === 0 ? 0 : Math.round((row.done / row.total) * 100);
+        return (
+          <article class="progress-card" style={`animation-delay: ${0.05 + i * 0.04}s`}>
+            <h2>
+              <a href={`${base}tracks/${row.track.slug}/`}>{row.track.title}</a>
+            </h2>
+            <div class="score">
+              {row.total === 0 ? '暂无勾选进度项' : `${row.done} / ${row.total} · ${pct}%`}
+            </div>
+            {row.total > 0 && (
+              <div class="bar" aria-hidden="true">
+                <span style={`width: ${pct}%`} />
+              </div>
+            )}
+            {row.files.length > 0 && (
+              <ul>
+                {row.files.map((f) => {
+                  const href =
+                    f.docId === ''
+                      ? `${base}tracks/${row.track.slug}/`
+                      : `${base}tracks/${row.track.slug}/${f.docId}/`;
+                  return (
+                    <li>
+                      <a href={href}>{f.label}</a>
+                      {' — '}
+                      {f.stats.done}/{f.stats.total}
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </article>
+        );
+      })
+    }
+  </div>
+</BaseLayout>
