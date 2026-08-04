@@ -16,7 +16,8 @@
 
 | 名称 | 链接 |
 |------|------|
-| Advanced Action RPG（Vince Petrelli） | https://tencent.udemy.com/course/unreal-engine-5-advanced-action-rpg/ |
+| Climbing System（Vince，短专题） | https://tencent.udemy.com/course/unreal-engine-5-cpp-climbing-system/ |
+| Advanced Action RPG（Vince，进阶） | https://tencent.udemy.com/course/unreal-engine-5-advanced-action-rpg/ |
 | 说明 | [enterprise-udemy.md](./enterprise-udemy.md) |
 
 ## 公开站系统课（企业库常无；可申请加购）

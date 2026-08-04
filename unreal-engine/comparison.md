@@ -2,32 +2,32 @@
 
 ## 选择标准
 
-质量优先 + Ulibarri **不在企业库** → 默认 **免费官方路径**；企业过关课当进阶视频跟练。
+质量优先；企业库**缺**系统 C++ 入门视频课 → 默认 **免费官方第一门**；企业课作短专题 / 进阶。
 
-## 路径 A：免费官方（当前默认 / 第一门）
+起点：编辑器已熟悉（有蓝图 demo 经验即可）→ **直接学 UE C++**，不绑定改造旧项目；也不必先系统学完通用 C++。
+
+## 路径 A：免费官方（默认）
 
 | 资源 | 链接 | 角色 |
 |------|------|------|
-| C++ Quick Start | https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-cpp-quick-start | 第一天动手 |
+| C++ Quick Start | https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-cpp-quick-start | **第一门** |
 | Programming with C++ | https://dev.epicgames.com/documentation/en-us/unreal-engine/programming-with-cplusplus-in-unreal-engine | 系统文档 |
 | 5.8 Release Notes | https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-release-notes | 版本差 |
-| Epic Learning | https://dev.epicgames.com/community/unreal-engine/learning | 免费视频/专题 |
+| Epic Learning | https://dev.epicgames.com/community/unreal-engine/learning | 免费视频 |
 | Lyra | https://dev.epicgames.com/community/learning/courses/Yj3/unreal-engine-lyra-sample-game | 正规项目结构 |
 
-优点：对齐 **5.8**、免费、和引擎同源。  
-缺点：不如一门商业课「一条龙带项目」那么省心，要自己串。
-
-## 路径 B：企业进阶（有基础后）
+## 路径 B：企业课（官方之后）
 
 | 资源 | 链接 | 角色 |
 |------|------|------|
-| Advanced Action RPG（Vince Petrelli） | https://tencent.udemy.com/course/unreal-engine-5-advanced-action-rpg/ | GAS / 玩法工程 |
+| Climbing System | https://tencent.udemy.com/course/unreal-engine-5-cpp-climbing-system/ | 短 C++ 专题 |
+| Advanced Action RPG | https://tencent.udemy.com/course/unreal-engine-5-advanced-action-rpg/ | GAS 进阶 |
 
 ## 路径 C：申请加购 / 自费
 
 | 资源 | 链接 | 说明 |
 |------|------|------|
-| Ulibarri Ultimate Game Developer | https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/ | 系统入门视频课；约到 5.7，本地 5.8 + 文档补差 |
+| Ulibarri Ultimate Game Developer | https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/ | 系统入门视频；**不在企业库** |
 | 配套仓 | https://github.com/DruidMech/UE5_TheUltimateDeveloperCourse | |
 | Multiplayer Shooter（进阶） | https://www.udemy.com/course/unreal-engine-5-cpp-multiplayer-shooter/ | 联机，有基础再看 |
 

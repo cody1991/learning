@@ -5,9 +5,10 @@
 - C++ Quick Start：https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-cpp-quick-start  
 - Programming with C++：https://dev.epicgames.com/documentation/en-us/unreal-engine/programming-with-cplusplus-in-unreal-engine  
 - Epic Learning：https://dev.epicgames.com/community/unreal-engine/learning  
+- Climbing System（企业）：https://tencent.udemy.com/course/unreal-engine-5-cpp-climbing-system/  
+- Advanced Action RPG（企业）：https://tencent.udemy.com/course/unreal-engine-5-advanced-action-rpg/  
 - Lyra：https://dev.epicgames.com/community/learning/courses/Yj3/unreal-engine-lyra-sample-game  
-- 企业进阶课（已质检）：https://tencent.udemy.com/course/unreal-engine-5-advanced-action-rpg/  
-- （可选加购）Ulibarri 公开课：https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/  
+- （可选加购）Ulibarri：https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/  
 
 ---
 
@@ -15,62 +16,45 @@
 
 1. Epic Launcher 安装 **UE 5.8**  
 2. 装好 VS / Xcode（C++ 游戏开发工作负载）  
-3. 新建 **C++** 项目（Third Person 模板即可）
+3. 新建 **C++** 项目（Third Person 模板即可）——不必基于旧蓝图工程  
 
 ## 1. 官方 Quick Start（必做）
 
-按文档做完一遍：  
 https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-cpp-quick-start  
 
 目标：会建 C++ 类、编译、回编辑器测 Actor。
 
-## 2. 文档主线（按主题啃，配合小实验）
+## 2. 文档主线（小实验）
 
-从这里进：  
 https://dev.epicgames.com/documentation/en-us/unreal-engine/programming-with-cplusplus-in-unreal-engine  
-
-建议顺序（自己在项目里各做一个小实验）：
 
 | 阶段 | 主题 | 你要会的 |
 |------|------|----------|
-| A | Gameplay classes / Actor / Component | 反射、`UCLASS`/`UPROPERTY`/`UFUNCTION` |
+| A | Gameplay classes / Actor / Component | `UCLASS` / `UPROPERTY` / `UFUNCTION` |
 | B | 输入（Enhanced Input） | 角色移动、镜头 |
 | C | 碰撞 / 重叠 / 定时器 / 委托 | 基础交互 |
-| D | UI（UMG）一点 | 血条/简单 HUD（可后置） |
-| E | 看 Lyra 目录 | 大项目怎么拆模块 |
+| D | UI（UMG）一点 | 可后置 |
+| E | 看 Lyra 目录 | 大项目怎么拆 |
 
-卡 API 查：https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-release-notes  
+## 3. Epic Learning（免费视频加餐）
 
-## 3. Epic Learning 视频（免费加餐）
+https://dev.epicgames.com/community/unreal-engine/learning — 筛 C++ / Programming。
 
-https://dev.epicgames.com/community/unreal-engine/learning  
+## 4. 企业课（官方之后）
 
-筛选：**Programming & Scripting** / C++ / Unreal Engine 5。  
-当「视频讲解」，仍以自己工程练习为准。
+1. 短课：[Climbing System](https://tencent.udemy.com/course/unreal-engine-5-cpp-climbing-system/)  
+2. 进阶：[Advanced Action RPG](https://tencent.udemy.com/course/unreal-engine-5-advanced-action-rpg/)  
 
-## 4. 企业 Udemy 进阶（有基础后）
-
-直链跟练：[Advanced Action RPG / Vince Petrelli](https://tencent.udemy.com/course/unreal-engine-5-advanced-action-rpg/)（GAS C++）  
-
-清单与说明：[enterprise-udemy.md](./enterprise-udemy.md)。入门仍靠上面 1–3；需要系统视频课可申请加购 Ulibarri。
+详见 [enterprise-udemy.md](./enterprise-udemy.md)。若要「一条龙完整游戏视频」→ 申请加购 Ulibarri（不在库）。
 
 ## 5. 巩固
 
-自开小项目（任意题材）：玩法 **C++**，蓝图只绑资源/调参。
+自开小项目：玩法 **C++**；蓝图只绑资源/调参。
 
-## 和 AI 协作（学习为主）
+## 和 AI 协作
 
-优先级：**自己写 > 对照教程 > 问 AI**。AI 默认不当「整文件代写」。
-
-| 阶段 | 你做什么 | AI 做什么 |
-|------|----------|-----------|
-| 跟 Quick Start / 文档 | 自己敲 `.h/.cpp`，编译、回编辑器测 | 卡住时问「为什么这样写 / 报错怎么读」 |
-| 跟视频课 | 先自己实现；对不上再打开教程代码对照 | 对比差异、解释反射/`UPROPERTY` 等 |
-| 巩固小项目 | 玩法逻辑自己写；蓝图只绑资源/调参 | 评审、补边界情况、给小步练习题 |
-
-可问 AI：编译错误、生命周期、该不该 `UPROPERTY`、设计取舍。  
-少让 AI：整段粘贴可运行系统、直接改蓝图图。
+优先级：**自己写 > 对照教程 > 问 AI**。
 
 ## 学习笔记
 
-（章节、企业站搜到的课名、5.8 差异）
+（章节、5.8 差异、企业课进度）
