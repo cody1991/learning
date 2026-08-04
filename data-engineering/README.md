@@ -1,6 +1,6 @@
 # Data Engineering 学习笔记
 
-与 `microsoft-ai-courses/` **独立**的一条线：数据工程（管道、仓、调度），不是 Agent / Skills。
+数据工程学习线：管道、仓、调度。
 
 ## 学习顺序（当前计划）
 
