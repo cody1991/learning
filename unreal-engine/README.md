@@ -7,8 +7,9 @@
 
 | # | 资源 | 链接 | 角色 |
 |---|------|------|------|
-| 1 | Stephen Ulibarri《UE5 C++ The Ultimate Game Developer Course》 | https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/ | **主课**（Udemy，约已更新到 5.7） |
-| 2 | Epic 官方 5.8 文档 + Lyra Sample | 见下方 | **权威对照** |
+| 1 | Stephen Ulibarri《UE5 C++ The Ultimate Game Developer Course》 | https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/ | **主课**（约已更新到 5.7） |
+| 2a | UE 5.8 C++ 文档 | https://dev.epicgames.com/documentation/en-us/unreal-engine/programming-with-cplusplus-in-unreal-engine | **权威对照** |
+| 2b | Lyra Sample | https://dev.epicgames.com/community/learning/courses/Yj3/unreal-engine-lyra-sample-game | **官方 Sample** |
 
 配套代码仓：https://github.com/DruidMech/UE5_TheUltimateDeveloperCourse  
 

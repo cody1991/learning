@@ -43,5 +43,6 @@
 
 ## 以后可以加（第 4、第 5 个）
 
-- **italki** 社区外教：每周 1 次 × 25 分钟，话题固定（点餐、租房、工作小聊）
-- **All Ears English** 或剧集英音轨+英文字幕：6 Minute 觉得太简单后再加
+- **italki**（https://www.italki.com/）：每周 1 次 × 25 分钟，话题固定（点餐、租房、工作小聊）
+- **All Ears English**（https://www.allearsenglish.com/）或剧集英音轨+英文字幕：6 Minute 觉得太简单后再加
+- 更多链接见 [resources.md](./resources.md)

@@ -23,6 +23,8 @@
 
 ## 建议模块关注点
 
+仓库模块直链见 [path.md](./path.md)。
+
 | 方向 | 为什么重要 |
 |------|------------|
 | 容器与本地可复现环境 | DE 日常基本功 |
@@ -31,16 +33,14 @@
 | 批 / 流（Spark、Kafka） | 规模化数据 |
 | dbt 转换 | 分析师/工程师协作常见层 |
 
-具体周次以仓库当前大纲为准（每年可能微调）。
-
 ## 进度
 
-- [ ] Course setup / 环境
-- [ ] Week 1+
-- [ ] 中期项目节点
-- [ ] 期末 / Capstone（如有）
-
-（可按仓库周次自行拆成 checklist）
+- [ ] [Course README / setup](https://github.com/DataTalksClub/data-engineering-zoomcamp)
+- [ ] [01 Docker & Terraform](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/01-docker-terraform)
+- [ ] [02 Workflow](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/02-workflow-orchestration)
+- [ ] [03 Warehouse](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/03-data-warehouse)
+- [ ] [04 Analytics eng](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/04-analytics-engineering)
+- [ ] [05–07 + projects](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/projects)
 
 ## 学习笔记
 

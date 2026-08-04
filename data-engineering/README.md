@@ -8,7 +8,7 @@
 2. [Data Engineering Zoomcamp](./02-data-engineering-zoomcamp.md) — 主线实战（9 周 pipeline）
 3. [Handbook](./03-data-engineer-handbook.md) — 当地图查漏补缺，不当主教材
 
-对比与选型见 [comparison.md](./comparison.md)。
+对比与选型见 [comparison.md](./comparison.md)；跟课顺序见 [path.md](./path.md)。
 
 ## 资源一览
 

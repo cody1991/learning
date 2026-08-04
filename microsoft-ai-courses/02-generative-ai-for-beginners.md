@@ -1,7 +1,7 @@
 # Generative AI for Beginners
 
 - 仓库：https://github.com/microsoft/generative-ai-for-beginners
-- 中文：仓库内 `translations/zh-CN/`
+- 中文 README：https://github.com/microsoft/generative-ai-for-beginners/blob/main/translations/zh-CN/README.md
 - 规模：约 11.6 万 star（2026-08）
 - 体量：21 课
 - 状态：**打基础阶段 — 挑重点学，不必全啃**
@@ -21,29 +21,28 @@
 
 ★★☆ — 三门里最友好。会一点 Python 或 TS 即可。
 
-## 和 Agents 的关系
-
-Agents 课官方建议：第一次做 GenAI 的人先看这门。  
-本课第 17 课才点到 AI Agents；深度不够，真正 Agent 内容在 Agents 课。
-
 ## 建议优先课（面向 Agent / Skills）
 
-| 课 | 主题 | 为什么看 |
-|----|------|----------|
-| 04–05 | Prompt Engineering | Skills / Agent 指令质量的基础 |
-| 11 | Function Calling | 工具调用的前身概念 |
-| 15 | RAG | 很多 Agent 会检索外部知识 |
-| 01–02 | LLM 入门 / 选模型 | 若几乎零基础再补 |
+| 课 | 主题 | 直链 |
+|----|------|------|
+| 04 | Prompt Fundamentals | https://github.com/microsoft/generative-ai-for-beginners/tree/main/04-prompt-engineering-fundamentals |
+| 05 | Advanced Prompts | https://github.com/microsoft/generative-ai-for-beginners/tree/main/05-advanced-prompts |
+| 11 | Function Calling | https://github.com/microsoft/generative-ai-for-beginners/tree/main/11-integrating-with-function-calling |
+| 15 | RAG | https://github.com/microsoft/generative-ai-for-beginners/tree/main/15-rag-and-vector-databases |
+| 01（可选） | Intro to GenAI | https://github.com/microsoft/generative-ai-for-beginners/tree/main/01-introduction-to-genai |
+| 02（可选） | Comparing LLMs | https://github.com/microsoft/generative-ai-for-beginners/tree/main/02-exploring-and-comparing-different-llms |
 
-可跳过或后补：图片生成、Low Code、各厂商模型介绍、微调等（视兴趣）。
+环境搭建：https://github.com/microsoft/generative-ai-for-beginners/tree/main/00-course-setup  
+
+可跳过或后补：图片生成、Low Code、各厂商模型介绍、微调等。
 
 ## 进度
 
-- [ ] 04 Prompt Fundamentals
-- [ ] 05 Advanced Prompts
-- [ ] 11 Function Calling
-- [ ] 15 RAG
-- [ ] （可选）其它感兴趣的课
+- [ ] [04 Prompt Fundamentals](https://github.com/microsoft/generative-ai-for-beginners/tree/main/04-prompt-engineering-fundamentals)
+- [ ] [05 Advanced Prompts](https://github.com/microsoft/generative-ai-for-beginners/tree/main/05-advanced-prompts)
+- [ ] [11 Function Calling](https://github.com/microsoft/generative-ai-for-beginners/tree/main/11-integrating-with-function-calling)
+- [ ] [15 RAG](https://github.com/microsoft/generative-ai-for-beginners/tree/main/15-rag-and-vector-databases)
+- [ ] （可选）其它课
 
 ## 学习笔记
 

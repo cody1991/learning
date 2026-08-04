@@ -101,3 +101,5 @@ New topics get a **new** top-level folder.
 - Forcing Blueprint/visual workflows when user prefers code + AI
 - Creating the folder before the user wants it (unless they said 继续/建文件夹/单独的)
 - Mixing「推荐」with unsolicited git commit/push
+- Writing「见下方 / 仓库内某处 / 去站内搜索」without a concrete URL for primary items
+- Priority lesson lists without deep links to lesson folders (for multi-lesson courses)

@@ -1,15 +1,15 @@
 # AI Agents for Beginners
 
 - 仓库：https://github.com/microsoft/ai-agents-for-beginners
-- 中文：仓库内 `translations/zh-CN/`
+- 中文 README：https://github.com/microsoft/ai-agents-for-beginners/blob/main/translations/zh-CN/README.md
 - 规模：约 7.1 万 star（2026-08）
 - 体量：18 课
-- 状态：**主线课程 — Generative AI 扫盲后进入**
+- 状态：**主线课程 — GenAI 扫盲后进入**
 
 ## 是什么
 
 Agent 专项：用例、框架、设计模式、Tool Use、Agentic RAG、Planning、Multi-Agent、MCP/A2A、Context、Memory、生产与安全等。  
-代码：主要 **Python**，偏 **Microsoft Agent Framework + Foundry**（部分示例支持其它 OpenAI 兼容提供商）。
+代码：主要 **Python**，偏 **Microsoft Agent Framework + Foundry**。
 
 ## 教学模式
 
@@ -23,41 +23,41 @@ Agent 专项：用例、框架、设计模式、Tool Use、Agentic RAG、Plannin
 
 ★★★ — 概念中等偏上，工程/环境门槛高于 Generative AI。
 
-## 建议优先课（面向 Agent 工具 / Skills）
+## 建议优先课（直链）
 
-| 课 | 主题 | 为什么看 |
-|----|------|----------|
-| 01 | Intro & Use Cases | 什么时候该用 Agent |
-| 03 | Design Patterns | 整体地图 |
-| 04 | Tool Use | **写工具最相关** |
-| 07 | Planning | 多步任务怎么拆 |
-| 08 | Multi-Agent | 多角色协作 |
-| 11 | Agentic Protocols (MCP, A2A…) | **工具协议** |
-| 12 | Context Engineering | 和 Skills 上下文设计很像 |
-| 13 | Memory | 有状态 Agent |
+| 课 | 主题 | 直链 |
+|----|------|------|
+| 01 | Intro & Use Cases | https://github.com/microsoft/ai-agents-for-beginners/tree/main/01-intro-to-ai-agents |
+| 03 | Design Patterns | https://github.com/microsoft/ai-agents-for-beginners/tree/main/03-agentic-design-patterns |
+| 04 | Tool Use | https://github.com/microsoft/ai-agents-for-beginners/tree/main/04-tool-use |
+| 07 | Planning | https://github.com/microsoft/ai-agents-for-beginners/tree/main/07-planning-design |
+| 08 | Multi-Agent | https://github.com/microsoft/ai-agents-for-beginners/tree/main/08-multi-agent |
+| 11 | Agentic Protocols (MCP, A2A…) | https://github.com/microsoft/ai-agents-for-beginners/tree/main/11-agentic-protocols |
+| 12 | Context Engineering | https://github.com/microsoft/ai-agents-for-beginners/tree/main/12-context-engineering |
+| 13 | Memory | https://github.com/microsoft/ai-agents-for-beginners/tree/main/13-agent-memory |
 
-其余课（信任、生产、浏览器 Agent、部署、安全）按需要补。
+环境搭建：https://github.com/microsoft/ai-agents-for-beginners/tree/main/00-course-setup  
+
+可选加深工具协议：https://github.com/microsoft/mcp-for-beginners  
 
 ## 进度
 
-- [ ] 01 Intro
-- [ ] 03 Design Patterns
-- [ ] 04 Tool Use
-- [ ] 07 Planning
-- [ ] 08 Multi-Agent
-- [ ] 11 MCP / Protocols
-- [ ] 12 Context Engineering
-- [ ] 13 Memory
-- [ ] （可选）其它课
+- [ ] [01 Intro](https://github.com/microsoft/ai-agents-for-beginners/tree/main/01-intro-to-ai-agents)
+- [ ] [03 Design Patterns](https://github.com/microsoft/ai-agents-for-beginners/tree/main/03-agentic-design-patterns)
+- [ ] [04 Tool Use](https://github.com/microsoft/ai-agents-for-beginners/tree/main/04-tool-use)
+- [ ] [07 Planning](https://github.com/microsoft/ai-agents-for-beginners/tree/main/07-planning-design)
+- [ ] [08 Multi-Agent](https://github.com/microsoft/ai-agents-for-beginners/tree/main/08-multi-agent)
+- [ ] [11 MCP / Protocols](https://github.com/microsoft/ai-agents-for-beginners/tree/main/11-agentic-protocols)
+- [ ] [12 Context](https://github.com/microsoft/ai-agents-for-beginners/tree/main/12-context-engineering)
+- [ ] [13 Memory](https://github.com/microsoft/ai-agents-for-beginners/tree/main/13-agent-memory)
 
 ## 学习笔记
 
 （跟课过程中往下记）
 
-## 和 Cursor Skills 的衔接
+## 动手巩固
 
-学完概念后，动手方向可以是：
-- 写一个项目/个人 `SKILL.md`（触发条件、步骤、领域知识）
-- 或做一个可被 Agent 调用的工具 / MCP server
+- 写一个 Cursor `SKILL.md`（触发条件、步骤、领域知识）
+- 或做一个可被 Agent 调用的工具 / MCP server  
 
 课内框架偏微软生态；概念可迁移，具体 API 不必死磕。

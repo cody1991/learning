@@ -13,13 +13,14 @@
 - 英语音轨剧集 / YouTube，开 **英文字幕**
 - 工作/办事遇到的英语：事后把听不清的词记下来，下次查
 
-## 以后再开
+## 以后再开（已备直链）
 
-| 资源 | 何时开 |
-|------|--------|
-| italki / Preply 一对一 | 跟读不再抵触之后，每周 1 次 |
-| All Ears English 等播客 | 6 Minute 明显偏简单时 |
-| ELSA Speak | 想单独抠发音时 |
+| 资源 | 链接 | 何时开 |
+|------|------|--------|
+| italki | https://www.italki.com/ | 跟读不再抵触后，每周 1×25 分钟 |
+| Preply | https://www.preply.com/ | italki 备选 |
+| All Ears English | https://www.allearsenglish.com/ | 6 Minute 明显偏简单时 |
+| ELSA Speak | https://elsaspeak.com/ | 想单独抠发音时 |
 
 ## 学习笔记
 
