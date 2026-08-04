@@ -38,11 +38,20 @@
 
 ## 进度
 
-- [ ] 本地实操目录已就绪（`labs/microsoft-generative-ai-for-beginners`）
-- [ ] 环境：按课内 [00 Setup](https://github.com/microsoft/generative-ai-for-beginners/tree/main/00-course-setup) 配 `.env`（API Key，勿提交）
+- [x] 本地实操目录已就绪（`labs/microsoft-generative-ai-for-beginners`）
+- [ ] 环境：`.env` 已填 Key（格式正确，能读到）；**OpenAI 账户额度不足（429 insufficient_quota）**，需在 Billing 充值后再测跑代码
+- [ ] 第 01 课：Introduction to GenAI（读 README + 可选视频）
 - [ ] （推荐全看）按仓库课表跟完，或至少完成 04 / 05 / 11 / 15
 - [ ] 进入 AI Agents 主线
 
 ## 学习笔记
 
-（跟课过程中往下记）
+### 01 Introduction（要点）
+
+- GenAI：用自然语言 prompt 生成文本/图像等内容
+- LLM 工作流：tokenizer → 预测下一 token → 概率分布 + temperature（非确定性）
+- 常见用法：摘要、创作、问答、补全、解释/生成代码
+- 局限：不完美、会幻觉、不可盲目当真相；需要人审改
+- 知识检测答案：选 3（同 prompt 也可能不同；适合出初稿再改）
+
+作业（可选）：写约 300 字「梦中 AI 创业」：Problem / How I would use AI / Impact
