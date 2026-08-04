@@ -17,6 +17,8 @@
 | 2 | 生活里「半主动」听力 | 播客/视频开英字；办事等场合留意英语 | 每天顺带 |
 | 3 | [Speechling](https://speechling.com/) 或手机录音跟读 | 跟读与自录对比 | 每天 10 分钟 |
 
+**按集勾选目录**：[catalog.md](./catalog.md)（含推荐起步 12 集直链）
+
 外教（italki 等）**先不作为主力**；跟读习惯稳定后，再加每周 1 次短课。
 
 详细对比见 [comparison.md](./comparison.md) / [routine.md](./routine.md)。
@@ -24,6 +26,7 @@
 ## 进度
 
 - [ ] 连续 2 周：每天 6 Minute + 跟读
+- [ ] [catalog 起步 12 集](./catalog.md) 勾完
 - [ ] 能不看稿听懂一集大意
 - [ ] 开始 Speechling / 自录跟读
 - [ ] （可选）加每周 1×25 分钟外教或语伴
