@@ -39,7 +39,8 @@
 ## 进度
 
 - [x] 本地实操目录已就绪（`labs/microsoft-generative-ai-for-beginners`）
-- [ ] 环境：`.env` 已填 Key（格式正确，能读到）；**OpenAI 账户额度不足（429 insufficient_quota）**，需在 Billing 充值后再测跑代码
+- [x] 环境：`.env` 已写 `OPENAI_BASE_URL`（LiteLLM）+ `OPENAI_CHAT_MODEL=gpt-4o-mini`；样本 `gpt-5-mini` → `gpt-4o-mini`；`api_utils.create_openai_client` 会读 `OPENAI_BASE_URL`
+- [ ] 若跑样本 401：在网关侧换新 Key，更新 `.env` 的 `OPENAI_API_KEY`（勿提交）
 - [ ] 第 01 课：Introduction to GenAI（读 README + 可选视频）
 - [ ] （推荐全看）按仓库课表跟完，或至少完成 04 / 05 / 11 / 15
 - [ ] 进入 AI Agents 主线
