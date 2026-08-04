@@ -4,8 +4,8 @@ description: >-
   Recommends learning resources and creates independent topic note folders under
   this learning repo. Use when the user asks for 推荐/教程/课程/学习路径, compares
   learning materials, or wants a new subject folder like the existing
-  microsoft-ai-courses, data-engineering, english-speaking-listening, or
-  unreal-engine tracks.
+  microsoft-ai-courses, data-engineering, english-speaking-listening,
+  dutch-language, personal-finance, unreal-engine, or ai-infra tracks.
 ---
 
 # Learning resource recommend
@@ -156,8 +156,10 @@ Templates: see [folder-template.md](folder-template.md).
 |--------|--------|
 | `microsoft-ai-courses/` | Agent / GenAI / Skills（GenAI → Agents；MCP 可选） |
 | `data-engineering/` | DE101 → Zoomcamp → Handbook |
-| `english-speaking-listening/` | NL life, listening + low-pressure speaking |
-| `unreal-engine/` | UE 5.8 + C++; Epic Quick Start first; enterprise Advanced RPG as advanced |
+| `english-speaking-listening/` | NL life, listening + speaking practice |
+| `dutch-language/` | Dutch for daily life（learndutch.org + grammar index） |
+| `personal-finance/` | Budget / emergency fund / long-term investing basics（Nibud + Bogleheads） |
+| `unreal-engine/` | UE 5.8 + C++; Epic Quick Start first; enterprise Climbing / Advanced RPG |
 | `ai-infra/` | DMLS + Made With ML + DL.AI serving/LLMOps; enterprise Production Track optional |
 
 New topics get a **new** top-level folder.
