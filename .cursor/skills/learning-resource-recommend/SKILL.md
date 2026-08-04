@@ -67,9 +67,9 @@ Rules:
 
 - **Independent tracks**: no cross-links between topic folders; no「和 XX 线的关系」sections
 - **Do not commit** unless the user asks
-- Reuse the folder shape below; omit unused files
-- `README.md` / `resources.md` / `path.md` must contain **clickable links** for the shortlist (same URLs as in chat)
-- `path.md` should outline how to follow the primary course (phases or sections), not only「打开课然后自己学」
+- Reuse the folder shape below; **omit files that don't fit the track type**（见下方对照表）
+- `README.md` 最短清单必须含 **可点直链**；有 `path.md` / `resources.md` 时里面的主资源同样要有直链
+- `path.md`（若存在）应写出阶段步骤，不只写「打开课自己学」
 - **Only recommended / optional keepers** go into markdown tables; no「不推荐 / 跳过 / 水课」entries
 
 ### 5. Aftercare
@@ -81,15 +81,32 @@ Rules:
 
 ```text
 <topic-slug>/
-├── README.md           # goal, shortlist, progress checkboxes
-├── comparison.md       # why these, why not others, difficulty/format
-├── resources.md        # optional: links only
-├── path.md             # optional: ordered steps (tech courses)
-├── routine.md          # optional: daily habit (language / practice)
-└── 01-*.md, 02-*.md…   # optional: one file per major resource
+├── README.md           # 必有：目标、最短清单（含直链）、进度勾选
+├── comparison.md       # 必有：为什么选这些（过关资源对比）
+├── path.md             # 技术线：按阶段怎么学（有序步骤 + 直链）
+├── routine.md          # 习惯线：每日/每周怎么练（语言等）
+├── resources.md        # 链接较多时：纯链接表（可选；短清单可只放在 README）
+├── 01-*.md, 02-*.md…   # 多门「跟课笔记」时：一门一文件（可选）
+└── <topic-extra>.md    # 少数主题特例（如 UE 的 enterprise-udemy.md）
 ```
 
-Slug: lowercase kebab-case (`data-engineering`, `unreal-engine`).
+Slug: lowercase kebab-case（`data-engineering`, `unreal-engine`）。
+
+### 什么时候用哪个文件
+
+| 文件 | 何时要 | 例子 |
+|------|--------|------|
+| `README.md` | **每条线都要** | 所有 track |
+| `comparison.md` | **每条线都要** | 所有 track |
+| `path.md` | 技术课、有「第几步做什么」 | ai-infra / DE / UE |
+| `routine.md` | 习惯/低压力练习，不是一门课串起来 | english |
+| `resources.md` | 链接多、不想把 README 撑爆 | ai-infra / UE / english |
+| `01-*.md`… | **多门独立资源**且要各自进度/笔记 | DE、microsoft-ai |
+| 特例文件 | 仅该主题需要的补充 | `unreal-engine/enterprise-udemy.md` |
+
+**刻意不统一的部分**：语言线没有 `path.md`（用 `routine.md`）；单课/短清单线可以没有 `01-*.md`；没有企业课的线不必造 `enterprise-*.md`。
+
+**必须统一的部分**：每条线都能从 `README` 最短清单点开主资源；技术线的学习步骤在 `path.md` 里有直链；笔记里不写已否决的课。
 
 Templates: see [folder-template.md](folder-template.md).
 

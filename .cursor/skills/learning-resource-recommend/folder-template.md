@@ -2,6 +2,9 @@
 
 Copy and trim. Write in Chinese unless the user asks otherwise. Keep files short.
 
+**每条线必有**：`README.md` + `comparison.md`。  
+其余按 track 类型选用（见 `SKILL.md` 对照表），不要为了「长得一样」硬造空文件。
+
 ## README.md
 
 ```markdown

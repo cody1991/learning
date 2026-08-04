@@ -4,9 +4,9 @@
 
 ## 学习顺序
 
-1. [Generative AI for Beginners](./02-generative-ai-for-beginners.md) — Prompt / Function Calling / RAG  
+1. [Generative AI for Beginners](./01-generative-ai-for-beginners.md) — Prompt / Function Calling / RAG  
    https://github.com/microsoft/generative-ai-for-beginners
-2. [AI Agents for Beginners](./03-ai-agents-for-beginners.md) — 主线：Tool Use / Planning / MCP 等  
+2. [AI Agents for Beginners](./02-ai-agents-for-beginners.md) — 主线：Tool Use / Planning / MCP 等  
    https://github.com/microsoft/ai-agents-for-beginners
 3. （可选）[MCP for Beginners](https://github.com/microsoft/mcp-for-beginners) — 专门做工具协议时再看
 

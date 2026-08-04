@@ -38,6 +38,6 @@
 
 ## 推荐路径
 
-1. Generative AI 挑课：`04–05` Prompt、`11` Function Calling、`15` RAG（直链见 [02](./02-generative-ai-for-beginners.md)）
-2. AI Agents：Tool Use、Planning、Multi-Agent、MCP、Context / Memory（直链见 [03](./03-ai-agents-for-beginners.md)）
+1. Generative AI 挑课：`04–05` Prompt、`11` Function Calling、`15` RAG（直链见 [01](./01-generative-ai-for-beginners.md)）
+2. AI Agents：Tool Use、Planning、Multi-Agent、MCP、Context / Memory（直链见 [02](./02-ai-agents-for-beginners.md)）
 3. 边学边写一个实际 Skill 或工具巩固
