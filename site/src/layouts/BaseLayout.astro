@@ -35,6 +35,9 @@ const pathname = Astro.url.pathname;
             aria-current={pathname.includes('/progress') ? 'page' : undefined}>进度</a
           >
           <a href={`${base}#search`}>搜索</a>
+          <a href="https://github.com/cody1991/learning" target="_blank" rel="noopener noreferrer"
+            >GitHub</a
+          >
         </nav>
       </header>
       <slot />
