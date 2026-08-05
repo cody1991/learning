@@ -13,7 +13,7 @@
 
 | # | 集 | 直链 | 练完 |
 |---|-----|------|------|
-| 1 | Scared of speaking English? | https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/260122 | [ ] |
+| 1 | Scared of speaking English? | https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/260122 | [x] |
 | 2 | What English phrases really mean | https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260115 | [ ] |
 | 3 | Rude emails | https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260702 | [ ] |
 | 4 | Should we cycle more? | https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260709 | [ ] |
